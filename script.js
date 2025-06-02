@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', function() {
             link.href = socialLinks['instagram'];
         } else if (title.includes('linkedin') && socialLinks['linkedin']) {
             link.href = socialLinks['linkedin'];
-        } else if (title.includes('twitter') && socialLinks['twitter']) {
-            link.href = socialLinks['twitter'] || '#';
+        } else if (title.includes('facebook') && socialLinks['facebook']) {
+            link.href = socialLinks['facebook'] || 'https://www.facebook.com/abrar2O3O';
         }
     });
     
