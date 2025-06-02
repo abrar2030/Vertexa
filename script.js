@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'github': 'https://github.com/abrar2030',
         'instagram': 'https://www.instagram.com/abrar2o3o/',
         'linkedin': 'https://www.linkedin.com/in/abrar2030/',
-        'email': 'mailto:abrar2030@gmail.com'
+        'email': 'mailto:abrarahmedpei@gmail.com'
     };
     
     // Update social links in header
