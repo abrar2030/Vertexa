@@ -232,14 +232,60 @@ h2 {
     color: var(--accent-color);
 }
 
+/* Social sidebar - left fixed vertical section */
+.social-sidebar {
+    position: fixed;
+    left: 2rem;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.social-sidebar-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.social-sidebar-list li {
+    transition: transform 0.3s ease;
+}
+
+.social-sidebar-list li:hover {
+    transform: translateY(-5px);
+}
+
+.social-sidebar-list a {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-sidebar-list a:hover {
+    color: var(--accent-color);
+}
+
+.sidebar-line {
+    width: 1px;
+    height: 100px;
+    background-color: var(--text-secondary);
+}
+
+/* Email sidebar - right fixed vertical section */
 .email-sidebar {
     position: fixed;
     right: 2rem;
     bottom: 0;
-    writing-mode: vertical-rl;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    z-index: 10;
 }
 
 .email-sidebar a {
@@ -247,19 +293,14 @@ h2 {
     text-decoration: none;
     font-size: 0.9rem;
     letter-spacing: 0.1rem;
-    padding: 1rem 0;
-    transition: color 0.3s;
+    writing-mode: vertical-rl;
+    margin-bottom: 1.5rem;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .email-sidebar a:hover {
     color: var(--accent-color);
-}
-
-.email-sidebar::after {
-    content: '';
-    width: 1px;
-    height: 100px;
-    background-color: var(--text-secondary);
+    transform: translateY(-5px);
 }
 
 /* Section Styles */
@@ -712,7 +753,7 @@ footer {
         order: -1;
     }
     
-    .email-sidebar {
+    .social-sidebar, .email-sidebar {
         display: none;
     }
 }
