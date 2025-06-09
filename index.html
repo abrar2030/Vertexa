@@ -123,81 +123,389 @@
 
         <section id="skills" class="skills">
             <h2 class="section-title"><span>02.</span> Skills</h2>
+            <div class="skills-tabs">
+                <button class="skill-tab active" data-tab="languages">Programming Languages</button>
+                <button class="skill-tab" data-tab="frameworks">Frameworks</button>
+                <button class="skill-tab" data-tab="cicd">CI/CD Pipelines</button>
+                <button class="skill-tab" data-tab="scripting">Scripting & Automation</button>
+                <button class="skill-tab" data-tab="devops">DevOps & Cloud</button>
+                <button class="skill-tab" data-tab="finance">Finance & Quantitative</button>
+            </div>
             <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Languages</h3>
+                <div class="skill-category active" id="languages">
                     <div class="skill-icons">
-                        <div class="skill-item">
-                            <img src="assets/icons/html.svg" alt="HTML">
-                            <span>HTML</span>
+                        <div class="skill-item" data-skill="Java">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="coffee" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <img src="assets/icons/css.svg" alt="CSS">
-                            <span>CSS</span>
+                        <div class="skill-item" data-skill="Python">
+                            <div class="skill-icon-wrapper">
+                                <img src="assets/icons/python.svg" alt="Python" class="skill-icon">
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <img src="assets/icons/javascript.svg" alt="JavaScript">
-                            <span>JavaScript</span>
+                        <div class="skill-item" data-skill="JavaScript">
+                            <div class="skill-icon-wrapper">
+                                <img src="assets/icons/javascript.svg" alt="JavaScript" class="skill-icon">
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <img src="assets/icons/typescript.svg" alt="TypeScript">
-                            <span>TypeScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="assets/icons/python.svg" alt="Python">
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="assets/icons/php.svg" alt="PHP">
-                            <span>PHP</span>
+                        <div class="skill-item" data-skill="TypeScript">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="code" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">TypeScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="skill-category">
-                    <h3>Frameworks & Libraries</h3>
+                <div class="skill-category" id="frameworks">
                     <div class="skill-icons">
-                        <div class="skill-item">
-                            <img src="assets/icons/react.svg" alt="React">
-                            <span>React</span>
+                        <div class="skill-item" data-skill="Spring Boot 3">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="leaf" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Spring Boot 3</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <img src="assets/icons/express.svg" alt="Express">
-                            <span>Express</span>
+                        <div class="skill-item" data-skill="JUnit 5">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="check-circle" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">JUnit 5</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <img src="assets/icons/nodejs.svg" alt="Node.js">
-                            <span>Node.js</span>
+                        <div class="skill-item" data-skill="React">
+                            <div class="skill-icon-wrapper">
+                                <img src="assets/icons/react.svg" alt="React" class="skill-icon">
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <img src="assets/icons/laravel.svg" alt="Laravel">
-                            <span>Laravel</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="assets/icons/tailwind.svg" alt="Tailwind CSS">
-                            <span>Tailwind CSS</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="assets/icons/mongodb.svg" alt="MongoDB">
-                            <span>MongoDB</span>
+                        <div class="skill-item" data-skill="Angular">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="triangle" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Angular</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="skill-category">
-                    <h3>Developer Tools</h3>
+                <div class="skill-category" id="cicd">
                     <div class="skill-icons">
-                        <div class="skill-item">
-                            <img src="assets/icons/git.svg" alt="Git">
-                            <span>Git</span>
+                        <div class="skill-item" data-skill="Jenkins">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="settings" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Jenkins</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <img src="assets/icons/docker.svg" alt="Docker">
-                            <span>Docker</span>
+                        <div class="skill-item" data-skill="GitHub Actions">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="github" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">GitHub Actions</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <img src="assets/icons/figma.svg" alt="Figma">
-                            <span>Figma</span>
+                        <div class="skill-item" data-skill="Spinnaker">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="rotate-cw" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Spinnaker</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" id="scripting">
+                    <div class="skill-icons">
+                        <div class="skill-item" data-skill="Python Scripting">
+                            <div class="skill-icon-wrapper">
+                                <img src="assets/icons/python.svg" alt="Python" class="skill-icon">
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Python Scripting</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Bash">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="terminal" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Bash</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Shell Scripting">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="command" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Shell Scripting</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Automation Tools">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="zap" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Automation Tools</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" id="devops">
+                    <div class="skill-icons">
+                        <div class="skill-item" data-skill="AWS">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="cloud" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">AWS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="GCP">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="cloud-cog" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">GCP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="IBM Cloud">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="server" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">IBM Cloud</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Terraform">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="layers" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Terraform</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Ansible">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="cog" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Ansible</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Docker">
+                            <div class="skill-icon-wrapper">
+                                <img src="assets/icons/docker.svg" alt="Docker" class="skill-icon">
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Docker</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Kubernetes">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="hexagon" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Kubernetes</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" id="finance">
+                    <div class="skill-icons">
+                        <div class="skill-item" data-skill="Financial Markets">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="trending-up" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Financial Markets</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Data Analysis">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="bar-chart-3" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Data Analysis</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Econometrics">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="line-chart" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Econometrics</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Derivative Pricing">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="calculator" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Derivative Pricing</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Stochastic Modeling">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="activity" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Stochastic Modeling</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Monte Carlo Simulations">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="shuffle" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Monte Carlo Simulations</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Machine Learning in Finance">
+                            <div class="skill-icon-wrapper">
+                                <i data-lucide="brain" class="skill-icon-lucide"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">ML in Finance</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70"></div>
+                                </div>
+                                <span class="skill-percentage">70%</span>
+                            </div>
                         </div>
                     </div>
                 </div>
