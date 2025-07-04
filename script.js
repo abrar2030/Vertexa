@@ -442,11 +442,11 @@ function initTypingEffect() {
     if (!typingElement) return;
     
     const phrases = [
-        'Software Engineer',
-        'Full Stack Developer',
-        'Frontend Specialist',
-        'Backend Developer',
-        'Web Developer'
+        'Financial Engineer',
+        'Quantitative Analyst',
+        'Risk Management Specialist',
+        'Algorithmic Trader',
+        'Financial Data Scientist'
     ];
     
     let phraseIndex = 0;
